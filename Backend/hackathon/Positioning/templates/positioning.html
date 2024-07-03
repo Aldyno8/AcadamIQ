@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Quiz{% endblock %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static "css/positioning.css" %}">
+<form action="{% url "Positioning" %}" method="post">
+<div class="quiz">
+    {% for question in question  %}
+    {% csrf_token %}
+    
+    <li> {{question}}</li>
+    <ul>
+        
+        {% for choice in question.choice_set.all %}
+            <li>
+                <input type="checkbox" name="question_{{question.id}} value='{{choice.id}}">{{choice}}
+            </li>
+
+        {% endfor %}
+        
+    </ul>
+    
+    {% endfor %}
+    <button type="submit"> Envoyer</button>
+</div>
+</form>
+
+<img src="{% static 'img/insurance_AI.480x480.65229577-removebg-preview.png' %}" class="IA">
+
+{% endblock content %}

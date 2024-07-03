@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang='fr'>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% load static %}
+        <title>{% block title %}Base{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    <body>  
+    </head>
+    {% block header %}
+    <img src="{% static 'img/logo.png' %}" alt="home_icons" class='logo'>
+    {% endblock header %}
+<div class='body'> 
+      {% block nav %}
+    <nav>
+        <ul>
+            <img src="{% static 'img/utilisateur-de-profil.png' %}" alt="home_icons">
+            <a href="#"><li><img src="{% static 'img/acceuil.png' %}" alt="home_icons"></li></a>
+            <a href="#"><li><img src="{% static 'img/chatbot.png' %}" alt="Course_icons"></li></a>
+            <a href="#"><li><img src="{% static 'img/quiz.png' %}" alt="Quiz_icons"></li></a>
+            <a href="#"><li><img src="{% static 'img/lecon-video.png' %}" alt="Course_icons"></li></a>
+            <a href="#"><li><img src="{% static 'img/bouton-de-reglage-de-la-roue-dentee.png' %}" alt="reglage_icons"></li></a>
+            <a href="#"><li><img src="{% static 'img/se-deconnecter.png' %}" alt="logouut_icons"></li></a>
+        </ul>    
+    </nav>
+      {% endblock %}
+
+      {% block content %}           {% endblock content %}
+
+</div>
+    </body>
+    </html>

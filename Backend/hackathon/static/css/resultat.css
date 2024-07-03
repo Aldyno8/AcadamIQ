@@ -1,0 +1,38 @@
+img[class="robot"]{
+width: 600px;
+height: 600px;
+margin: auto;
+}
+
+img[class="bulle"]{
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    left: 600px;
+}
+
+p{
+    position: relative;
+    top: 100px;
+    left: -150px;
+    color: yellow;
+}
+
+a[class="lien"]{
+    width: 200px;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: darkblue;
+    color: yellow;
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    left: 1000px;
+    top: 252px;
+    transition: 1s;
+}
+
+a[class="lien"]:hover{
+    background-color: rgb(0, 0, 80);
+    transform: translateY(-5px);
+}

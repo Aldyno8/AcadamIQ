@@ -1,0 +1,84 @@
+body{
+    background-color: #7c65dd; 
+}
+
+.login{
+    display: flex;
+    width: max-content;
+    margin: auto;
+    border-radius: 30px;
+    background-color: #7c65dd;
+    box-shadow: 1px 1px 1px 1px ;
+    margin-top:100px ;
+}
+
+img{
+    background-color: antiquewhite;
+    border-radius:30px 0px 0px 30px;
+    height: 390px;
+    width: 390px;
+}
+
+form{
+    background-color: #5232d2;
+    border-radius: 00px 30px 30px 0px;
+    width: 300px;
+    padding: 10px;
+    margin: 0px;
+    color: black;
+
+}
+
+.content{
+    border-bottom: 2px;
+    background-color: transparent;
+    margin: 40px 0px 40px 00px ;
+    padding: 2px;
+
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-bottom:2px solid yellow ;
+    margin: 20px;
+    
+}
+
+label{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+button{
+    border-radius: 10px;
+    color: black;
+    background-color: yellow;
+    height: 30px;
+    width: 100px;
+    margin-left: 30px;
+    cursor: pointer;
+    border: none;
+
+}
+
+/*  Responsive design */
+@media only screen and (max-width:768px) {
+    
+form{
+    border-radius: 30px;
+    background-color: #5232d2;
+    padding: 20px;
+    height: 400px;
+ }
+ input{
+    margin-bottom: 50px;
+ }
+
+ img{
+        display: none;
+    
+ }
+}

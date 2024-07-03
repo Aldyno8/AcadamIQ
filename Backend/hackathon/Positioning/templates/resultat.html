@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Résultats{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/resultat.css' %}">
+<img src="{% static 'img/friendly-robot-removebg-preview.png' %}" alt="robot" class="robot">
+<img src="{% static 'img/50b08d23dcd9b2fd51b6b8c1def4e12b-removebg-preview.png' %}" alt="robot" class="bulle">
+
+<p>Tu etre au niveau débutant mais nous allons améliorer cela maintenant si tu es prets </p>
+
+<a href="{% url "Lesson_list" %}" class="lien">Commencer le Cours</a>
+
+{% endblock content %}

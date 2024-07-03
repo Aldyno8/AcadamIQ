@@ -1,0 +1,42 @@
+form{
+    background-color: #4a33a4;
+    width: 900px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 30px;
+    overflow: auto;
+
+    color: black;
+}
+
+form::-webkit-scrollbar {
+    width: none;
+    height: 60px;
+  }
+
+button{
+    background-color: darkblue;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    right: -700px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+img[class="IA"]{
+    width: 400px;
+    height: 570px;
+    position: absolute;
+    left: 1136px;
+    top: 100px;
+
+}

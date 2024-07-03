@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}course{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/course.css' %}">
+
+<div class="course">
+ {% for chapiter in lesson  %}
+ <div class="title">
+   {{ chapiter.sous_titre }} <br>
+</div>
+
+<div class="content">
+   {{ chapiter.contenu_du_cours|safe}} <br>
+</div> 
+   {% endfor %}
+</div>
+<img src="{% static 'img/insurance_AI.480x480.65229577-removebg-preview.png' %}" class="IA">
+
+{% endblock content %}
